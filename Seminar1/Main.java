@@ -4,7 +4,5 @@ public class Main {
         new BottleOfWater("Колокольчик", 110);
         new BottleOfWater("Байкал", 130);
         new BottleOfWater("Буратино", 90);
-
-
     }
 }
