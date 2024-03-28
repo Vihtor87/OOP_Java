@@ -1,23 +1,23 @@
+import java.util.ArrayDeque;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 public class Market implements MarketBehaviour, QueueBehaviour {
 
-    private final List<Actor> queue;
+    List<Actor> queue = new LinkedList<>();
+    Queue<Actor> actorsQueue = new ArrayDeque<>();
 
-    public Market(List<Actor> queue) {
-        this.queue = queue;
+    @Override
+    public void acceptToMarket(Actor actor) {
+        System.out.println(String.format("%s приходит в магазин", actor.getName()));
+        queue.add(actor);
     }
 
     @Override
-    public void acceptToMarket(Actor actors) {
-        System.out.println(String.format("%s приходит в магазин", actors));
-        queue.add(actors);
-    }
-
-    @Override
-    public void releaseFromMarket(List<Actor> actors) {
+    public void releaseFromMarket(Actor actors) {
         queue.remove(actors);
-        System.out.println(actors.getName() + " покинул магазин");
+        System.out.println(String.format("%s покинул магазин", actors.getName()));
     }
 
     @Override
@@ -27,21 +27,25 @@ public class Market implements MarketBehaviour, QueueBehaviour {
 
     @Override
     public void takeInQueue(Actor actors) {
-
+        actorsQueue.add(actors);
+        System.out.println(String.format("%s встал в очередь", actors.getName()));
     }
 
     @Override
     public void takeOrders() {
-
+        actorsQueue.peek().isTakeOrder();
+        System.out.println(String.format("%s забрал заказ", actorsQueue.peek().getName()));
     }
 
     @Override
     public void giveOrders() {
-
+        actorsQueue.peek().isMakeOrder();
+        System.out.println(String.format("%s сделал заказ", actorsQueue.peek().getName()));
     }
 
     @Override
     public void releaseFromQueue() {
-
+        System.out.println(String.format("%s покинул очередь", actorsQueue.peek().getName()));
+        actorsQueue.poll();
     }
 }
