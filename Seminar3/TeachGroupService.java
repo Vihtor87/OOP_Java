@@ -16,4 +16,9 @@ public class TeachGroupService {
         Collections.sort(students);
         return students;
     }
+    public List<Student> getSortedStudentByFI() {
+        List<Student> students = new ArrayList<>(teacherGroup.getTeacherGroup());
+        students.sort(new StudentComparator());
+        return students;
+    }
 }
