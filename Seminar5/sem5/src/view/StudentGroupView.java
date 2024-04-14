@@ -1,6 +1,6 @@
 package view;
 
-import module.StudentGroup;
+import model.StudentGroup;
 public class StudentGroupView {
     public void sendOnConsole(StudentGroup studentGroup){
         System.out.println(studentGroup);

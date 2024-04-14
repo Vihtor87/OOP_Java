@@ -1,9 +1,9 @@
 package service;
 
-import module.Student;
-import module.Teacher;
-import module.Type;
-import module.User;
+import model.Student;
+import model.Teacher;
+import model.Type;
+import model.User;
 
 import java.util.ArrayList;
 import java.util.List;

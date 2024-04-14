@@ -1,8 +1,8 @@
 package service;
 
-import module.Student;
-import module.StudentGroup;
-import module.Teacher;
+import model.Student;
+import model.StudentGroup;
+import model.Teacher;
 
 import java.util.List;
 

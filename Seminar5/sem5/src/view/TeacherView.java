@@ -1,6 +1,6 @@
 package view;
 
-import module.Teacher;
+import model.Teacher;
 
 
 public class TeacherView {

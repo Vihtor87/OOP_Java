@@ -1,11 +1,11 @@
 package controller;
 
-import module.Student;
-import module.Type;
-import module.User;
+import model.Student;
+import model.Type;
+import model.User;
 import service.DataService;
 import view.StudentView;
-import module.Teacher;
+import model.Teacher;
 import view.StudentGroupView;
 import view.TeacherView;
 import service.StudentGroupService;

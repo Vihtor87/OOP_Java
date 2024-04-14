@@ -1,7 +1,6 @@
 package view;
 
-import module.Student;
-import module.Type;
+import model.Student;
 
 public class StudentView {
     public void printToConsole(Student student) {
