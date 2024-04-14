@@ -1,0 +1,12 @@
+апр. 14, 2024 11:04:09 PM calculator.FileLogger log
+INFO: Значение калькулятора 3.0 + 4.0i. Начало вызова метода sum с параметром 2.0 + 1.0i
+апр. 14, 2024 11:04:09 PM calculator.FileLogger log
+INFO: Вызов метода sum произошел.
+апр. 14, 2024 11:04:13 PM calculator.FileLogger log
+INFO: Получение результата 5.0 + 5.0i
+апр. 14, 2024 11:09:29 PM calculator.FileLogger log
+INFO: Значение калькулятора 1.0 + 2.0i. Начало вызова метода minus с параметром 3.0 + 4.0i
+апр. 14, 2024 11:09:29 PM calculator.FileLogger log
+INFO: Вызов метода minus произошел.
+апр. 14, 2024 11:09:32 PM calculator.FileLogger log
+INFO: Получение результата -2.0 - 2.0i
